@@ -1,0 +1,168 @@
+*{
+    text-align: center;
+}
+
+body{
+    color: black;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+
+.top-container {
+    height: 40vh;
+}
+
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#form{
+    width: 600px;
+    height: 40vh;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#form h1{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+    width: 30em;
+}
+
+#form h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#form input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:4px 0px 0px 4px;
+    width:30em;
+    text-align: left;
+    border:2px solid #EEEEEE;
+    background: #EEEEEE;
+    outline:none;
+}
+
+#form button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:0px 4px 4px 0px;
+    border:2px solid white;
+    background: white;
+    color:black;
+}
+
+#form button:hover{
+    color:black;
+    background-color:  gray;
+    border: 1px solid  gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.errors{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    width:30em;
+    text-align: left;
+    font-size: 13px;
+}
+  
+  .success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  #download-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:0px 4px 4px 0px;
+    border:2px solid white;
+    background: white;
+    color:black;
+    font-size: 13px;
+}
+  
+  #download-btn:hover{
+    color:black;
+    background-color:  gray;
+    border: 1px solid  gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  @media(max-width:768px){
+    .bottom-container{
+      width: 90%;
+      margin: auto;
+    }
+  
+    #form, .success{
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  @media(max-width:480px){
+    #form input{
+      width: 50%;
+ }
+}
+
+.rainbow{
+  animation: rainbow 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+  100%,0%{
+    color: rgb(255,0,0);
+  }
+  8%{
+    color: rgb(255,127,0);
+  }
+  16%{
+    color: rgb(255,255,0);
+  }
+  25%{
+    color: rgb(127,255,0);
+  }
+  33%{
+    color: rgb(0,255,0);
+  }
+  41%{
+    color: rgb(0,255,127);
+  }
+  50%{
+    color: rgb(0,255,255);
+  }
+  58%{
+    color: rgb(0,127,255);
+  }
+  66%{
+    color: rgb(0,0,255);
+  }
+  75%{
+    color: rgb(127,0,255);
+  }
+  83%{
+    color: rgb(255,0,255);
+  }
+  91%{
+    color: rgb(255,0,127);
+  }
+}
+  
